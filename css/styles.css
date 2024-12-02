@@ -1,12 +1,68 @@
 body {
-    background-color: var(--white-text);
     color: var(--second-color-text);
+    background-color: var(--white-text);
+
+    font-family: var(--font-family);
+    letter-spacing: -0.015em;
 }
+
+.list {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 :root {
 	--actionable-item: #18a0fb;
     --white-text: #ffffff;
     --main-color-text: #000000;
     --second-color-text: rgba(0, 0, 0, 0.8);
     --second-background-color: #f5f5f5;
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Comfortaa", sans-serif;
 }
 
+.logo {
+    font-family: var(--second-family);
+    font-size: 28px;
+    line-height: 1.14;
+    color: var(--main-color-text);
+}
+
+.logo:hover {
+    color: var(--actionable-item);
+}
+
+.site-nav .link {
+    color: var(--actionable-item);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--main-color-text);
+}
+
+.hero-title, 
+.section-title {
+    color: var(--main-color-text);
+}
+
+.feature-list .title {
+    color: var(--main-color-text);
+}
+
+.feature-list .link {
+    color: var(--actionable-item);
+}
+
+.button {
+    color: var(--main-color-text);
+    background-color: var(--white-text);
+}
+
+.button.primary {
+    background-color: var(--actionable-item);
+    color: var(--white-text);
+}
