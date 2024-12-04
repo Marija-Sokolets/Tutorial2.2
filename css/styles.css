@@ -37,6 +37,11 @@ a {
 
 .site-nav .link {
     color: var(--actionable-item);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: -0.01em;
+    color: var(--actionable-item);
 }
 
 .site-nav .link:hover,
