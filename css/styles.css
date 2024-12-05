@@ -4,6 +4,8 @@ body {
 
     font-family: var(--font-family);
     letter-spacing: -0.015em;
+    font-size: 18px;
+    line-height: 1.67;
 }
 
 .list {
@@ -37,11 +39,10 @@ a {
 
 .site-nav .link {
     color: var(--actionable-item);
-    font-family: inherit;
+    /* font-family: inherit; */
     font-weight: 500;
     font-size: 15px;
-    letter-spacing: -0.01em;
-    color: var(--actionable-item);
+    line-height: 1.2;
 }
 
 .site-nav .link:hover,
@@ -49,13 +50,50 @@ a {
     color: var(--main-color-text);
 }
 
-.hero-title, 
-.section-title {
+.hero-title {
     color: var(--main-color-text);
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 1.43;
+    text-align: center;
 }
 
-.feature-list .title {
+.section-title {
     color: var(--main-color-text);
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.title-align {
+    text-align: inherit;
+}
+
+.feature-list .title,
+.work-list .title {
+    color: var(--main-color-text);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.section-grey {
+    background-color: var(--second-background-color);
+}
+
+.text {
+    font-size: 36px;
+    line-height: 1.39;
+    text-align: center;
+}
+
+.text-align {
+    text-align: inherit;
+}
+
+.hiden {
+    display: none;
 }
 
 .feature-list .link {
@@ -65,9 +103,25 @@ a {
 .button {
     color: var(--main-color-text);
     background-color: var(--white-text);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 .button.primary {
     background-color: var(--actionable-item);
     color: var(--white-text);
+}
+
+.button.secondary {
+    color: var(--actionable-item);
+    background-color: var(--white-text);
+}
+
+.footer-list {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--main-color-text);
 }
