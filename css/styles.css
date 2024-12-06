@@ -9,6 +9,8 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -26,6 +28,16 @@ a {
     --second-family: "Comfortaa", sans-serif;
 }
 
+.container {
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 0 auto;
+    width: 1440px;
+    outline: 2px solid tomato;
+}
+
+/* Logo */
+
 .logo {
     font-family: var(--second-family);
     font-size: 28px;
@@ -35,6 +47,12 @@ a {
 
 .logo:hover {
     color: var(--actionable-item);
+}
+
+/* Page header */
+
+.page-header {
+    background-color: #ccc;
 }
 
 .site-nav .link {
@@ -50,13 +68,20 @@ a {
     color: var(--main-color-text);
 }
 
+/* Hero */
+
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 40px;
     color: var(--main-color-text);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
     text-align: center;
+    background-color: tomato;
 }
+
+/* Section */
 
 .section-title {
     color: var(--main-color-text);
@@ -66,9 +91,16 @@ a {
     text-align: center;
 }
 
+.section-description {
+    font-size: 36px;
+    line-height: 1.39;
+}
+
 .title-align {
     text-align: inherit;
 }
+
+/* Features и Examples */
 
 .feature-list .title,
 .work-list .title {
@@ -100,13 +132,22 @@ a {
     color: var(--actionable-item);
 }
 
+/* Button */
+
 .button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 11px 34px;
+    min-width: 130px;
+
     color: var(--main-color-text);
     background-color: var(--white-text);
 
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+    text-align: center;
 }
 
 .button.primary {
@@ -115,8 +156,21 @@ a {
 }
 
 .button.secondary {
+    border-color: var(--actionable-item);
     color: var(--actionable-item);
     background-color: var(--white-text);
+}
+
+/* Footer */
+
+.copyright {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.social > .label {
+    font-size: 15px;
+    line-height: 1.6;
 }
 
 .footer-list {
