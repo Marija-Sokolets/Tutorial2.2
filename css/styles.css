@@ -33,6 +33,8 @@ a {
     margin-right: auto; */
     margin: 0 auto;
     width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
     outline: 2px solid tomato;
 }
 
@@ -73,27 +75,50 @@ a {
 .hero-title {
     margin-top: 0;
     margin-bottom: 40px;
+
     color: var(--main-color-text);
     font-weight: 400;
     font-size: 56px;
     line-height: 1.43;
     text-align: center;
-    background-color: tomato;
 }
 
 /* Section */
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 .section-title {
+    margin-top: 0;
+    margin-bottom: 60px;
+
     color: var(--main-color-text);
+
     font-weight: 400;
     font-size: 48px;
     line-height: 1.5;
+}
+
+.section-title.centered {
     text-align: center;
 }
 
 .section-description {
+    margin-top: 0;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 1.39;
+}
+
+.section-grey {
+    background-color: var(--second-background-color);
 }
 
 .title-align {
@@ -104,14 +129,29 @@ a {
 
 .feature-list .title,
 .work-list .title {
+    margin-top: 0;
+    margin-bottom: 24px;
     color: var(--main-color-text);
+
     font-weight: 700;
     font-size: 24px;
     line-height: 1.5;
 }
 
-.section-grey {
+/* Works */
+
+.work-list > .item {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.work-list > .item:nth-child(2n) {
     background-color: var(--second-background-color);
+}
+
+.feature-list p {
+    margin-top: 0;
+    margin-bottom: 32px;
 }
 
 .text {
